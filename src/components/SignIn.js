@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 class SignIn extends Component {
   render() {
-    return
+    return <div>SignIn page</div>
   }
 }
 

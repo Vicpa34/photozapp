@@ -4,7 +4,13 @@ import SignUp from "./SignUp"
 
 class Main extends Component {
   render() {
-    return <div> Hello!</div>
+    return (
+      <div>
+        {" "}
+        Hello!s
+        <SignIn />
+      </div>
+    )
   }
 }
 
