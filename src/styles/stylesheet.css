@@ -1,0 +1,48 @@
+#root {
+  font-size: 20px;
+}
+
+.card {
+  width: 465px;
+  margin: auto;
+}
+
+.App {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #e3f2fd;
+  color: red;
+  font-size: 20px;
+}
+.signinheader {
+  text-align: center;
+}
+.form {
+  color: black;
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+}
+.button {
+  float: right;
+}
+.bottomlink {
+  text-align: center;
+  margin-top: 10px;
+}
+.img {
+  height: 82px;
+  width: 95px;
+}
+p {
+  color: black;
+  font-size: 50px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 600px) {
+  /*for mobile phones*/
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+}
