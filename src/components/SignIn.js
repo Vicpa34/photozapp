@@ -7,11 +7,21 @@ import Axios from "axios"
 
 class SignIn extends Component {
   render() {
+    async function handleSubmit(e) {
+      e.preventDefault()
+      //alert("hello")
+      try {
+        await Axios.post("https://localhost:3000", { username: "test", email: "test@test.com", password: "111111111111" })
+        console.log("User was successfully created!")
+      } catch (e) {
+        console.log("There was an error!")
+      }
+    }
     return (
       <div className="App">
         <SignInHeader />
         <Card className="card">
-          <Form className="form">
+          <Form className="form" onSubmit={handleSubmit}>
             <h4>Sign In</h4>
             <FormGroup>
               <Label> Email </Label>
