@@ -10,11 +10,11 @@ class Main extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact>
+          <Route exact path="/" component={SignIn}>
             <SignIn />
           </Route>
 
-          <Route path="/sign-up">
+          <Route exact path="/signup" component={Signup}>
             <SignUp />
           </Route>
         </Switch>
