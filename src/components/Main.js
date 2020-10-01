@@ -3,8 +3,8 @@ import SignIn from "./SignIn"
 import SignUp from "./SignUp"
 import "../styles/stylesheet.css"
 import SignInHeader from "./SignInHeader"
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import Authentication from "./Authentication"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
+import isAuthenticated from "./Authentication"
 import Private from "./Private"
 
 class Main extends Component {
@@ -12,13 +12,13 @@ class Main extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route {...props} path="/private" render={props => (isAuthenticated() ? <Private /> : <Redirect to="/" />)} />
-
-          <Route path="/" exact>
+          <Route path="/sign-in">
             <SignIn />
           </Route>
 
-          <Route path="/sign-up">
+          <Route path="/private" render={() => (isAuthenticated() ? <Private /> : <Redirect to="/sign-in" />)} />
+
+          <Route path="/" exact>
             <SignUp />
           </Route>
         </Switch>
