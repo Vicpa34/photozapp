@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-//import "../styles/stylesheet.css"
 import { Card, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap"
-import SignInHeader from "../SignInHeader"
+import Logo from "../Logo"
+import Brand from "../Brand"
 import Navigation from "../Navigation"
 import { Link } from "react-router-dom"
 import Axios from "axios"
@@ -18,9 +18,10 @@ function SignIn() {
     }
   }
   return (
-    <div className="App">
+    <div>
       <Navigation />
-      <SignInHeader />
+      <Logo />
+      <Brand />
       <Card className="card">
         <Form className="form" onSubmit={handleSubmit}>
           <h4>Sign In</h4>
@@ -34,9 +35,7 @@ function SignIn() {
           </FormGroup>
           <Link to="#">Forgot password?</Link>
           <div className="button">
-            <Button color="primary" size="lg">
-              Sign In
-            </Button>
+            <Button size="lg">Sign In</Button>
           </div>
         </Form>
       </Card>

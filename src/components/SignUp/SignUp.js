@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 //import "../styles/stylesheet.css"
 import { Card, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap"
-import SignInHeader from "../SignInHeader"
+import SignInHeader from "../Brand/Brand"
 import Navigation from "../Navigation"
 import { Link } from "react-router-dom"
 //import Axios from "axios"

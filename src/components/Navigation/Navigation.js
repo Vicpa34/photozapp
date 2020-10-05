@@ -1,34 +1,36 @@
 import React, { Component } from "react"
-import SignInHeader from "../SignInHeader"
+import Logo from "../Logo"
+import Brand from "../Brand"
+import { Link } from "react-router-dom"
+import "./Navigation.scss"
+
+//import SignInHeader from "../Brand/Brand"
 //import "../styles/stylesheet.css"
 import { Collapse, Navbar, NavbarToggler, Button, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from "reactstrap"
 
 function Navigation() {
   return (
-    <div>
-      <Navbar className="nav" color="primary" light expand="md">
-        <NavbarBrand href="/">
-          <SignInHeader />
-        </NavbarBrand>
+    <Navbar className="nav" color="primary">
+      <Logo />
+      <Brand />
 
-        <Nav className="mr-auto" navbar>
-          <NavItem className="navitem">
-            <Button color="success" href="/">
-              Create new post
-            </Button>
-          </NavItem>
+      <NavItem>
+        <Button className="navitem" Link to="/">
+          Create new post
+        </Button>
+      </NavItem>
 
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className="navitem" nav caret>
-              Name
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>Sign Out</DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
-        </Nav>
-      </Navbar>
-    </div>
+      <UncontrolledDropdown nav inNavbar>
+        <DropdownToggle className="toggleitem" nav caret>
+          Name
+        </DropdownToggle>
+        <DropdownMenu right>
+          <DropdownItem Link to="">
+            Sign Out
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledDropdown>
+    </Navbar>
   )
 }
 

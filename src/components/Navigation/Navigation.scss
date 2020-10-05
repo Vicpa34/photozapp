@@ -2,11 +2,18 @@
 
 nav {
   box-sizing: border-box;
-  display: inline-block;
+  //display: inline;
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 .navitem {
-  margin-left: 300px;
+  //color: $success;
+  color: red;
+  margin-left: 100px;
+}
+
+.toggleitem {
+  color: $primary;
 }
