@@ -1,61 +1,11 @@
 @import "colors";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-.container {
-  background: $light-blue;
-    @font-face {
-    font-family: "Graphik";
-    src: url("https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css"<linkrel="stylesheet prefetch"href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">);
-}
-
-// #root {
-//   font-size: 20px;
-// }
-
-.card {
-  width: 465px;
-  margin: auto;
-}
-
-// .App {
-//   padding-top: 30px;
-//   padding-bottom: 50px;
-//   background: $light-blue;
-//   color: red;
-//   font-size: 20px;
-// }
-// .signinheader {
-//   text-align: center;
-//   @font-face {
-//     font-family: "Graphik";
-//     src: url("https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css"<linkrel="stylesheet prefetch"href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">);
-//   }
-
-// .form {
-//   color: black;
-//   width: 90%;
-//   padding: 15px;
-//   margin: auto;
-// }
-.button {
-  float: right;
-}
-.bottomlink {
-  text-align: center;
-  margin-top: 10px;
-}
-.img {
-  height: 82px;
-  width: 95px;
-}
-p {
-  color: black;
-  font-size: 50px;
-  font-weight: 800;
-}
-@media only screen and (max-width: 600px) {
-  /*for mobile phones*/
-  .card {
-    width: 90%;
-    margin: auto;
-  }
+html,
+body,
+#root {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  background-color: $light-blue;
 }
