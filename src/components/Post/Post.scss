@@ -1,0 +1,48 @@
+.cardContainer {
+  width: 65%;
+  margin: auto;
+  margin-top: 1%;
+
+  .titleText {
+    font-weight: bolder;
+    display: inline-block;
+    margin: 2% 4%;
+    margin-bottom: 0;
+  }
+  .btn-secondary {
+    color: black;
+    background-color: transparent;
+    border-color: #6c757d;
+  }
+  .comment {
+    margin-left: 35%;
+  }
+  .btn-primary {
+    color: white;
+    background-color: #0275d8;
+    border-color: transparent;
+    font-weight: bolder;
+  }
+  .btn-secondary {
+    color: #0275d8;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bolder;
+  }
+}
+.btn {
+  margin: auto;
+}
+
+.comment {
+  margin: auto;
+}
+.btn-primary {
+  color: #0275d8;
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: bolder;
+}
+.input {
+  margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+@import "colors";
+
+.navbarName {
+  color: white !important;
+}
+.navbarButton {
+  background-color: $success !important;
+}
+
+.logo-brand {
+  align-items: center;
+  padding-left: 20px;
+}
+
+.nav {
+  height: auto;
+  box-sizing: border-box;
+  padding: 1% 5%;
+  color: black;
+}
+
+.navitem {
+  color: red;
+  margin-left: 100px;
+}
+
+.toggleitem {
+  color: $primary;
+}
